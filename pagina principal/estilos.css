@@ -1,0 +1,37 @@
+    
+.nav-link{
+    color: #666777;
+    font-weight: 500;
+position: relative;
+
+}
+.nav-link:hover, .nav-link.active {
+    color:rgb(0, 0, 0) ;
+}
+.nav-link::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #1cc538;
+    transition: 0.3s ease-in-out;
+visibility: hidden;
+}
+.nav-link:hover::before, .nav-link.active::before {
+    width: 100%;
+    visibility: visible;
+   
+}
+body{
+background-color: palevioletred;
+
+}
+
+.empresa{
+    padding-left: 305px;
+    padding-right: 308px;
+ padding-top: 40px;
+}
